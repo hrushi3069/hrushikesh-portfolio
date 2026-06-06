@@ -159,7 +159,7 @@ export default function Home() {
 
       <section className="relative mx-auto grid min-h-[90vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          
+       
 
           <h1 className="max-w-4xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
             Hrushikesh Dunde
@@ -185,11 +185,12 @@ export default function Home() {
             </a>
 
             <a
-              href="/cv.pdf"
-              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15"
-            >
-              Download CV
-            </a>
+  href="/resume.pdf"
+  download
+  className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15"
+>
+  Download CV
+</a>
 
             <a
               href="mailto:hrushikeshdunde3069@gmail.com"
