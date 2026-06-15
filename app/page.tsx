@@ -1,16 +1,28 @@
 export default function Home() {
   const projects = [
+  {
+      title: "Explainable ML for Hazardous Asteroids",
+      category: "Machine Learning",
+      tools: "Python, XGBoost, SHAP, SMOTE, Random Forest",
+      text: "Classified potentially hazardous asteroids using NASA JPL orbital data. Applied SMOTE and class weighting for imbalance, compared Random Forest, XGBoost, and Logistic Regression, and used SHAP explainable AI to identify key risk factors.",
+    },
     {
       title: "King County House Price Prediction",
       category: "Machine Learning",
       tools: "Python, Scikit-learn, Pandas",
-      text: "Built and compared regression models to predict house prices. Used feature engineering, model evaluation, MAE, RMSE, R², and cross-validation to select the best model.",
+      text: "Built and compared regression models to predict house prices. Trained Linear Regression, Decision Tree, Random Forest, Neural Network, and Stacking Ensemble models. Evaluated using MAE, RMSE, R², and 5-fold cross-validation.",
+    },
+    {
+      title: "King County Housing Dataset Analysis",
+      category: "Data Analytics",
+      tools: "Python, EDA, Visualisation",
+      text: "Analysed house prices using Python with statistical analysis, visualisation, correlation, preprocessing, histograms, boxplots, scatter plots, and heatmaps to explore key patterns in the dataset.",
     },
     {
       title: "Multivariate Statistical Modelling",
       category: "Advanced Statistics",
       tools: "RStudio, PCA, MANOVA, ROC",
-      text: "Applied logistic regression, LDA, classification trees, PCA, factor analysis, MANOVA, ROC, AUC, and cross-validation for statistical modelling.",
+      text: "Applied logistic regression, LDA, classification trees, PCA, factor analysis, MANOVA, ROC, AUC, and cross-validation for statistical modelling and classification.",
     },
     {
       title: "Housing Sale Price Analysis",
@@ -27,16 +39,53 @@ export default function Home() {
     {
       title: "Survival Analysis of Cholangitis Dataset",
       category: "Medical Statistics",
-      tools: "Kaplan-Meier, Cox Regression",
-      text: "Used survival curves, log-rank tests, Cox regression, hazard ratios, backward AIC, forest plots, and proportional hazards checks.",
+      tools: "R, Kaplan-Meier, Cox Regression",
+      text: "Used survival curves, log-rank tests, Cox regression, hazard ratios, backward AIC, forest plots, concordance, likelihood ratio tests, and proportional hazards checks.",
+    },
+    {
+      title: "Medical Statistics Case Study",
+      category: "Medical Statistics",
+      tools: "R, Chi-Square, Poisson, Bayesian",
+      text: "Analysed clinical datasets using two-proportion tests, chi-square, Fisher's exact test, Poisson and negative binomial regression, risk ratios, odds ratios, Bayesian analysis, and sample size calculation.",
+    },
+    {
+      title: "BOB Online Fashion Retailer Case Study",
+      category: "Business Analytics",
+      tools: "CRISP-DM, Segmentation, Analytics",
+      text: "Proposed predictive analytics for premium product up-selling using CRISP-DM methodology, customer segmentation strategies, and revenue-growth analysis.",
     },
     {
       title: "Database Design for Worldwide Awaydays",
       category: "Database Design",
-      tools: "SQL, MySQL, ERD",
-      text: "Designed a relational database for guests, bookings, suppliers, activities, payments, BI reporting, GDPR, and database security.",
+      tools: "SQL, MySQL, ERD, Star Schema",
+      text: "Designed a relational database for guests, bookings, suppliers, activities, and payments. Covered BI reporting questions, star schema design, GDPR compliance, and database security.",
+    },
+    {
+      title: "Land Acquisition Cost Prediction",
+      category: "GIS & Technical Support",
+      tools: "GIS, AutoCAD, Google Earth Pro",
+      text: "Created and managed a 1000m GIS-based dataset for land acquisition records linked to HS2 technical support. Coordinated engineering drawings, project documents, and technical records.",
+    },
+    {
+      title: "Placement & Salary Prediction Android App",
+      category: "Mobile Development",
+      tools: "Android, Java, Machine Learning",
+      text: "Built an Android app to predict student placement chances and salary trends using machine learning concepts, developed as part of the Mumbai University final year project.",
+    },
+    {
+      title: "Tourism Management Website",
+      category: "Web Development",
+      tools: "HTML, CSS, JavaScript, MySQL",
+      text: "Developed a full-stack tourism management portal with front-end design, back-end logic, and MySQL database integration for managing tourist listings and bookings.",
+    },
+    {
+      title: "Fire Detection System with Water Sprinkler",
+      category: "Embedded Systems",
+      tools: "Sensors, Hardware, Automation",
+      text: "Built a fire safety system using sensor-based fire detection with automatic sprinkler response, integrating hardware components for real-time monitoring and rapid reaction.",
     },
   ]
+
 
   const skills = [
     "Python",
