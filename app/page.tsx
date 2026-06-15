@@ -1,636 +1,362 @@
-"use client"
-
 export default function Home() {
-
-const academicProjects = [
-{
-title:"Explainable Machine Learning for Potentially Hazardous Asteroids",
-year:"2026",
-module:"MSc Data Analytics Project",
-text:"Built machine learning classification models using NASA JPL orbital datasets. Performed preprocessing, exploratory analysis, feature selection, SMOTE, class weighting, Random Forest, XGBoost, Logistic Regression comparison, and SHAP explainable AI analysis."
-},
-
-{
-title:"King County House Price Prediction",
-year:"2026",
-module:"Data Mining and Knowledge Discovery",
-text:"Developed a Python regression system to predict house prices. Trained Linear Regression, Decision Tree, Random Forest, Neural Network, and Stacking Ensemble models. Evaluated using MAE, RMSE, R² and 5-fold cross validation."
-},
-
-{
-title:"Statistical Modelling and Classification Report",
-year:"2026",
-module:"Multivariate Analysis and Statistical Modelling",
-text:"Created statistical models in RStudio using logistic regression, LDA, classification trees, PCA, factor analysis, ROC, AUC and cross-validation."
-},
-
-{
-title:"Housing Sale Price Analysis",
-year:"2026",
-module:"Programming for Analytics with SAS",
-text:"Analysed housing datasets using SAS. Applied data cleaning, descriptive statistics, correlation analysis, PROC GLM regression and robustness checks."
-},
-
-{
-title:"Survival Analysis of Cholangitis Dataset",
-year:"2026",
-module:"Medical Statistics",
-text:"Performed survival analysis in R using Kaplan-Meier curves, Cox regression, hazard ratios, AIC selection, forest plots and assumption testing."
-},
-
-{
-title:"PPP Worldwide Awaydays Database Design",
-year:"2025",
-module:"Data Management",
-text:"Designed relational database structures covering customers, bookings, suppliers, payments, BI questions, GDPR and database security."
-},
-
-{
-title:"BOB Online Fashion Retailer Case Study",
-year:"2025",
-module:"Business Analytics Strategy",
-text:"Applied CRISP-DM, customer segmentation and predictive analytics concepts for premium product up-selling analysis."
-}
-]
-
-
-const projectExperience = [
-{
-title:"Land Acquisition Cost Prediction",
-subtitle:"Technical Support Project Experience",
-text:"Created and managed GIS-based datasets for land acquisition records, engineering drawings, project documentation and technical coordination."
-},
-
-{
-title:"Placement and Salary Prediction Android App",
-subtitle:"BE Project | Mumbai University",
-text:"Created an Android application using machine learning concepts to predict student placement chances and salary trends."
-},
-
-{
-title:"Tourism Management Website",
-subtitle:"BE Project | Mumbai University",
-text:"Developed a tourism management portal with frontend, backend and MySQL database support."
-}
-]
-
-
-const technicalSkills=[
-"Python",
-"R",
-"SAS",
-"SQL",
-"Power BI",
-"Machine Learning",
-"Statistical Modelling",
-"Regression Analysis",
-"Classification",
-"Predictive Analytics",
-"Data Cleaning",
-"Data Visualisation",
-"ROC AUC",
-"Cross Validation",
-"SHAP",
-"MySQL",
-"SAP ABAP",
-"RStudio",
-"SAS Studio"
-]
-
-
-const stats=[
-["10+","Analytics Projects"],
-["5+","ML Models Built"],
-["2026","MSc Completion"],
-["10+","Analytics Tools"]
-]
-
-
-return (
-
-<main className="min-h-screen overflow-hidden bg-[#020617] text-white">
-
-
-<div className="pointer-events-none fixed inset-0">
-
-<div className="absolute left-[-10%] top-[-10%] h-96 w-96 rounded-full bg-blue-600/30 blur-3xl"/>
-
-<div className="absolute right-[-10%] top-[20%] h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl"/>
-
-</div>
-
-
-
-<nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
-
-
-<div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-
-
-<a href="#" className="text-xl font-bold">
-Hrushikesh<span className="text-blue-400">.</span>
-</a>
-
-
-<div className="hidden gap-8 text-sm text-slate-300 md:flex">
-
-<a href="#profile">Profile</a>
-<a href="#projects">Projects</a>
-<a href="#skills">Skills</a>
-<a href="#education">Education</a>
-<a href="#contact">Contact</a>
-
-</div>
-
-
-</div>
-
-
-</nav>
-
-
-
-
-<section className="relative mx-auto grid min-h-[90vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
-
-
-<div>
-
-
-<h1 className="text-5xl font-black md:text-7xl">
-
-Hrushikesh Dunde
-
-<span className="block text-blue-400">
-Data Analyst
-</span>
-
-</h1>
-
-
-
-<p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-
-MSc Data Analytics student with an IT Engineering background and practical experience in Python, R, SAS, SQL, SAP ABAP and Power BI.
-
-Skilled in data cleaning, statistical analysis, machine learning, predictive modelling and dashboard reporting.
-
-Seeking Graduate Data Analyst, BI Analyst or Reporting Analyst opportunities in the UK.
-
-</p>
-
-
-<div className="mt-9 flex flex-wrap gap-4">
-
-
-<a href="#projects"
-className="rounded-xl bg-blue-500 px-6 py-3 font-semibold">
-View Projects
-</a>
-
-
-<a href="/resume.pdf"
-download
-className="rounded-xl border border-white/20 px-6 py-3">
-Download CV
-</a>
-
-
-<a href="mailto:hrushikeshdunde3069@gmail.com"
-className="rounded-xl border border-white/20 px-6 py-3">
-Contact
-</a>
-
-
-</div>
-
-
-</div>
-
-
-
-<div className="rounded-3xl border border-white/10 bg-white/10 p-8 backdrop-blur">
-
-
-<p className="font-mono text-sm text-slate-400">
-portfolio/profile.ts
-</p>
-
-
-<div className="mt-6 space-y-3 font-mono text-sm">
-
-
-<p>const name = "Hrushikesh Dunde"</p>
-
-<p>const role = "Data Analyst"</p>
-
-<p>const education = "MSc Data Analytics"</p>
-
-<p>const location = "Brighton, UK"</p>
-
-
-</div>
-
-
-</div>
-
-
-</section>
-<section id="profile" className="mx-auto max-w-7xl px-6 py-20">
-
-<h2 className="text-3xl font-bold text-blue-400">
-Profile
-</h2>
-
-
-<div className="mt-6 max-w-4xl text-slate-300 leading-8">
-
-<p>
-Data Analyst with an IT Engineering background and MSc Data Analytics
-student at the University of Brighton.
-</p>
-
-
-<p className="mt-4">
-Experienced in Python, R, SAS, SQL, Power BI and SAP ABAP.
-Skilled in data cleaning, statistical analysis, regression,
-machine learning, predictive modelling and dashboard reporting.
-</p>
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section className="mx-auto max-w-7xl px-6 py-10">
-
-
-<div className="grid gap-6 md:grid-cols-4">
-
-
-{stats.map((item,index)=>(
-
-
-<div
-key={index}
-className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
->
-
-
-<h3 className="text-3xl font-bold text-blue-400">
-{item[0]}
-</h3>
-
-
-<p className="mt-2 text-slate-300">
-{item[1]}
-</p>
-
-
-</div>
-
-
-))}
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-<section id="projects" className="mx-auto max-w-7xl px-6 py-20">
-
-
-<h2 className="text-3xl font-bold text-blue-400">
-Academic Projects
-</h2>
-
-
-
-<div className="mt-10 grid gap-6 md:grid-cols-2">
-
-
-{academicProjects.map((project,index)=>(
-
-
-<div
-key={index}
-className="rounded-2xl border border-white/10 bg-white/5 p-6"
->
-
-
-<h3 className="text-xl font-bold">
-{project.title}
-</h3>
-
-
-<p className="mt-2 text-sm text-blue-400">
-{project.module} | {project.year}
-</p>
-
-
-<p className="mt-4 text-slate-300 leading-7">
-{project.text}
-</p>
-
-
-</div>
-
-
-))}
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section className="mx-auto max-w-7xl px-6 py-20">
-
-
-<h2 className="text-3xl font-bold text-blue-400">
-Project Experience
-</h2>
-
-
-
-<div className="mt-10 grid gap-6 md:grid-cols-3">
-
-
-{projectExperience.map((project,index)=>(
-
-
-<div
-key={index}
-className="rounded-2xl border border-white/10 bg-white/5 p-6"
->
-
-
-<h3 className="text-xl font-bold">
-{project.title}
-</h3>
-
-
-<p className="mt-2 text-blue-400 text-sm">
-{project.subtitle}
-</p>
-
-
-<p className="mt-4 text-slate-300">
-{project.text}
-</p>
-
-
-</div>
-
-
-))}
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section id="skills" className="mx-auto max-w-7xl px-6 py-20">
-
-
-<h2 className="text-3xl font-bold text-blue-400">
-Technical Skills
-</h2>
-
-
-
-<div className="mt-8 flex flex-wrap gap-3">
-
-
-{technicalSkills.map((skill,index)=>(
-
-
-<span
-key={index}
-className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm"
->
-
-
-{skill}
-
-
-</span>
-
-
-))}
-
-
-</div>
-
-
-</section>
-
-
-
-
-
-
-<section id="education" className="mx-auto max-w-7xl px-6 py-20">
-
-
-<h2 className="text-3xl font-bold text-blue-400">
-Education
-</h2>
-
-
-
-<div className="mt-8 grid gap-6 md:grid-cols-2">
-
-
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-
-
-<h3 className="text-xl font-bold">
-MSc Data Analytics
-</h3>
-
-
-<p className="mt-2 text-blue-400">
-2026
-</p>
-
-
-<p className="mt-3 text-slate-300">
-University of Brighton, United Kingdom
-</p>
-
-
-</div>
-
-
-
-
-<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-
-
-<h3 className="text-xl font-bold">
-Bachelor of Engineering
-</h3>
-
-
-<p className="mt-2 text-blue-400">
-Information Technology | 2023
-</p>
-
-
-<p className="mt-3 text-slate-300">
-Mumbai University, India
-</p>
-
-
-</div>
-
-
-
-</div>
-
-
-
-</section>
-
-
-
-
-
-
-<section className="mx-auto max-w-7xl px-6 py-20">
-
-
-<h2 className="text-3xl font-bold text-blue-400">
-Certification
-</h2>
-
-
-
-<div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
-
-
-<h3 className="text-xl font-bold">
-SAP Certified Development Specialist
-</h3>
-
-
-<p className="mt-2 text-slate-300">
-ABAP for SAP HANA 2.0
-</p>
-
-
-<p className="text-slate-400">
-Certificate No. 0025823234
-</p>
-
-
-</div>
-
-
-</section>
-<section id="contact" className="mx-auto max-w-7xl px-6 py-20">
-
-  <h2 className="text-3xl font-bold text-blue-400">
-    Contact
-  </h2>
-
-  <div className="mt-8 grid gap-6 md:grid-cols-2">
-
-    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-      <h3 className="text-xl font-bold">Get in touch</h3>
-
-      <p className="mt-3 text-slate-300 leading-7">
-        You can contact me for Data Analyst, BI Analyst or Reporting Analyst roles.
-        I am open to graduate opportunities in the UK.
-      </p>
-
-      <div className="mt-6 space-y-3 text-slate-300">
-
-        <p>
-          Email:{" "}
-          <a
-            href="mailto:hrushikeshdunde3069@gmail.com"
-            className="text-blue-400"
-          >
-            hrushikeshdunde3069@gmail.com
-          </a>
-        </p>
-
-        <p>
-          Location: Brighton, United Kingdom
-        </p>
-
-        <p>
-          LinkedIn:{" "}
-          <a
-            href="#"
-            className="text-blue-400"
-          >
-            linkedin.com/in/hrushikesh-dunde
-          </a>
-        </p>
-
-      </div>
-    </div>
-
-    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
-      <h3 className="text-xl font-bold">Availability</h3>
-
-      <p className="mt-3 text-slate-300 leading-7">
-        Available for full-time graduate roles starting immediately after MSc completion.
-        Open to relocation within the UK.
-      </p>
-
-      <div className="mt-6 rounded-xl border border-white/10 bg-black/30 p-4 font-mono text-sm text-slate-300">
-        <p>status: "seeking_opportunity"</p>
-        <p>type: "Graduate Data Analyst"</p>
-        <p>mode: "Full-time"</p>
+  const projects = [
+    {
+      title: "King County House Price Prediction",
+      category: "Machine Learning",
+      tools: "Python, Scikit-learn, Pandas",
+      text: "Built and compared regression models to predict house prices. Used feature engineering, model evaluation, MAE, RMSE, R², and cross-validation to select the best model.",
+    },
+    {
+      title: "Multivariate Statistical Modelling",
+      category: "Advanced Statistics",
+      tools: "RStudio, PCA, MANOVA, ROC",
+      text: "Applied logistic regression, LDA, classification trees, PCA, factor analysis, MANOVA, ROC, AUC, and cross-validation for statistical modelling.",
+    },
+    {
+      title: "Housing Sale Price Analysis",
+      category: "Business Analytics",
+      tools: "SAS, PROC GLM, Regression",
+      text: "Cleaned and analysed housing data using SAS. Used descriptive statistics, correlation, regression, and robustness checks to identify key price drivers.",
+    },
+    {
+      title: "Google Play Store Ratings Analysis",
+      category: "Data Analytics",
+      tools: "R, Random Forest, Regression",
+      text: "Analysed app ratings, compared free and paid apps, cleaned data, built predictive models, and explained rating patterns using statistical methods.",
+    },
+    {
+      title: "Survival Analysis of Cholangitis Dataset",
+      category: "Medical Statistics",
+      tools: "Kaplan-Meier, Cox Regression",
+      text: "Used survival curves, log-rank tests, Cox regression, hazard ratios, backward AIC, forest plots, and proportional hazards checks.",
+    },
+    {
+      title: "Database Design for Worldwide Awaydays",
+      category: "Database Design",
+      tools: "SQL, MySQL, ERD",
+      text: "Designed a relational database for guests, bookings, suppliers, activities, payments, BI reporting, GDPR, and database security.",
+    },
+  ]
+
+  const skills = [
+    "Python",
+    "R",
+    "SAS",
+    "SQL",
+    "MySQL",
+    "Power BI",
+    "Excel",
+    "Machine Learning",
+    "Regression",
+    "Classification",
+    "PCA",
+    "Factor Analysis",
+    "MANOVA",
+    "ROC",
+    "AUC",
+    "SAP ABAP",
+    "RStudio",
+    "SAS Studio",
+    "AutoCAD",
+    "Google Earth Pro",
+  ]
+
+  const stats = [
+    ["10+", "Projects"],
+    ["20+", "Technical Skills"],
+    ["2026", "MSc Completion"],
+    ["60 WPM", "Typing Speed"],
+  ]
+
+  return (
+    <main className="min-h-screen overflow-hidden bg-[#020617] text-white">
+      <div className="pointer-events-none fixed inset-0">
+        <div className="absolute left-[-10%] top-[-10%] h-96 w-96 rounded-full bg-blue-600/30 blur-3xl" />
+        <div className="absolute right-[-10%] top-[20%] h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl" />
+        <div className="absolute bottom-[-10%] left-[30%] h-96 w-96 rounded-full bg-purple-600/20 blur-3xl" />
       </div>
 
-    </div>
+      <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+          <a href="#" className="text-xl font-bold tracking-tight">
+            Hrushikesh<span className="text-blue-400">.</span>
+          </a>
 
-  </div>
+          <div className="hidden gap-8 text-sm text-slate-300 md:flex">
+            <a href="#about" className="hover:text-blue-400">About</a>
+            <a href="#projects" className="hover:text-blue-400">Projects</a>
+            <a href="#skills" className="hover:text-blue-400">Skills</a>
+            <a href="#education" className="hover:text-blue-400">Education</a>
+            <a href="#contact" className="hover:text-blue-400">Contact</a>
+          </div>
+        </div>
+      </nav>
 
-</section>
+      <section className="relative mx-auto grid min-h-[90vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
+        <div>
+          <div className="mb-6 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm text-blue-300">
+            Data Analyst | MSc Data Analytics | UK
+          </div>
 
-<footer className="border-t border-white/10 bg-slate-950/60 py-10">
+          <h1 className="max-w-4xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
+            Turning data into
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
+              {" "}clear decisions
+            </span>
+          </h1>
 
-  <div className="mx-auto max-w-7xl px-6 text-center text-sm text-slate-400">
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
+            I am Hrushikesh Dunde, an MSc Data Analytics student at the
+            University of Brighton. I work with Python, R, SAS, SQL, Power BI,
+            machine learning, statistical modelling, and dashboard reporting.
+          </p>
 
-    <p>
-      © {new Date().getFullYear()} Hrushikesh Dunde. All rights reserved.
-    </p>
+          <div className="mt-9 flex flex-wrap gap-4">
+            <a
+              href="#projects"
+              className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-1 hover:bg-blue-600"
+            >
+              View My Projects
+            </a>
 
-    <p className="mt-2">
-      Built with Next.js and Tailwind CSS
-    </p>
+            <a
+              href="/cv.pdf"
+              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15"
+            >
+              Download CV
+            </a>
 
-  </div>
+            <a
+              href="mailto:hrushikeshdunde3069@gmail.com"
+              className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-blue-400"
+            >
+              Contact Me
+            </a>
+          </div>
+        </div>
 
-</footer>
+        <div className="relative">
+          <div className="rounded-[2rem] border border-white/10 bg-white/10 p-6 shadow-2xl backdrop-blur-xl">
+            <div className="rounded-[1.5rem] bg-slate-950 p-6">
+              <div className="mb-6 flex items-center gap-3">
+                <div className="h-3 w-3 rounded-full bg-red-400" />
+                <div className="h-3 w-3 rounded-full bg-yellow-400" />
+                <div className="h-3 w-3 rounded-full bg-green-400" />
+              </div>
 
-</main>
-)
+              <p className="text-sm text-slate-400">portfolio/profile.ts</p>
+
+              <div className="mt-5 space-y-3 font-mono text-sm leading-7">
+                <p>
+                  <span className="text-purple-400">const</span>{" "}
+                  <span className="text-blue-300">name</span>{" "}
+                  <span className="text-slate-500">=</span>{" "}
+                  <span className="text-green-300">"Hrushikesh Dunde"</span>
+                </p>
+                <p>
+                  <span className="text-purple-400">const</span>{" "}
+                  <span className="text-blue-300">role</span>{" "}
+                  <span className="text-slate-500">=</span>{" "}
+                  <span className="text-green-300">"Data Analyst"</span>
+                </p>
+                <p>
+                  <span className="text-purple-400">const</span>{" "}
+                  <span className="text-blue-300">focus</span>{" "}
+                  <span className="text-slate-500">=</span>{" "}
+                  <span className="text-green-300">
+                    "Data, BI, ML, Statistics"
+                  </span>
+                </p>
+                <p>
+                  <span className="text-purple-400">const</span>{" "}
+                  <span className="text-blue-300">location</span>{" "}
+                  <span className="text-slate-500">=</span>{" "}
+                  <span className="text-green-300">"Brighton, UK"</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative mx-auto max-w-7xl px-6 py-10">
+        <div className="grid gap-4 md:grid-cols-4">
+          {stats.map(([number, label]) => (
+            <div
+              key={label}
+              className="rounded-2xl border border-white/10 bg-white/10 p-6 text-center backdrop-blur"
+            >
+              <h2 className="text-3xl font-black text-blue-300">{number}</h2>
+              <p className="mt-2 text-sm text-slate-400">{label}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section id="about" className="relative mx-auto max-w-7xl px-6 py-24">
+        <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
+          <div>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+              About Me
+            </p>
+            <h2 className="mt-4 text-4xl font-black">
+              Data analyst with IT engineering background
+            </h2>
+          </div>
+
+          <div className="space-y-5 text-lg leading-8 text-slate-300">
+            <p>
+              I have practical experience in data cleaning, exploratory data
+              analysis, statistical modelling, machine learning, dashboard
+              thinking, SQL database design, and technical documentation.
+            </p>
+
+            <p>
+              My career target is to work as a Data Analyst, Junior Data
+              Analyst, BI Analyst, Reporting Analyst, Graduate Data Analyst, or
+              Analytics Support professional in the UK.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" className="relative mx-auto max-w-7xl px-6 py-24">
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+            Projects
+          </p>
+          <h2 className="mt-4 text-4xl font-black">Selected work</h2>
+          <p className="mt-4 text-slate-400">
+            A mix of machine learning, statistics, database design, business
+            analytics, and BI-focused work.
+          </p>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {projects.map((project) => (
+            <article
+              key={project.title}
+              className="group rounded-3xl border border-white/10 bg-white/[0.07] p-7 backdrop-blur transition hover:-translate-y-2 hover:border-blue-400/50 hover:bg-white/[0.1]"
+            >
+              <div className="mb-5 inline-flex rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300">
+                {project.category}
+              </div>
+
+              <h3 className="text-2xl font-bold group-hover:text-blue-300">
+                {project.title}
+              </h3>
+
+              <p className="mt-2 text-sm text-cyan-300">{project.tools}</p>
+
+              <p className="mt-4 leading-7 text-slate-400">{project.text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section id="skills" className="relative mx-auto max-w-7xl px-6 py-24">
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+            Skills
+          </p>
+          <h2 className="mt-4 text-4xl font-black">Technical toolkit</h2>
+        </div>
+
+        <div className="flex flex-wrap gap-3">
+          {skills.map((skill) => (
+            <span
+              key={skill}
+              className="rounded-full border border-white/10 bg-white/10 px-5 py-3 text-sm font-medium text-slate-200 transition hover:-translate-y-1 hover:border-blue-400 hover:text-blue-300"
+            >
+              {skill}
+            </span>
+          ))}
+        </div>
+      </section>
+
+      <section id="education" className="relative mx-auto max-w-7xl px-6 py-24">
+        <div className="mb-12 max-w-3xl">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+            Education
+          </p>
+          <h2 className="mt-4 text-4xl font-black">Academic background</h2>
+        </div>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          <div className="rounded-3xl border border-white/10 bg-white/[0.07] p-7">
+            <p className="text-sm text-blue-300">Expected 2026</p>
+            <h3 className="mt-3 text-2xl font-bold">MSc Data Analytics</h3>
+            <p className="mt-2 text-slate-400">
+              University of Brighton, United Kingdom
+            </p>
+          </div>
+
+          <div className="rounded-3xl border border-white/10 bg-white/[0.07] p-7">
+            <p className="text-sm text-blue-300">2023</p>
+            <h3 className="mt-3 text-2xl font-bold">
+              Bachelor of Engineering in IT
+            </h3>
+            <p className="mt-2 text-slate-400">Mumbai University, India</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative mx-auto max-w-7xl px-6 py-24">
+        <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-500/20 to-purple-500/20 p-8 backdrop-blur">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">
+            Certification
+          </p>
+          <h2 className="mt-4 text-3xl font-black">
+            SAP Certified Development Specialist
+          </h2>
+          <p className="mt-3 text-slate-300">ABAP for SAP HANA 2.0</p>
+          <p className="mt-1 text-slate-400">Certificate No. 0025823234</p>
+        </div>
+      </section>
+
+      <section id="contact" className="relative mx-auto max-w-7xl px-6 py-24">
+        <div className="rounded-[2rem] border border-white/10 bg-white/[0.07] p-8 text-center backdrop-blur md:p-12">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
+            Contact
+          </p>
+
+          <h2 className="mt-4 text-4xl font-black">
+            Let us connect
+          </h2>
+
+          <p className="mx-auto mt-4 max-w-2xl text-slate-400">
+            I am open to Data Analyst, Junior Data Analyst, BI Analyst,
+            Reporting Analyst, Graduate Data Analyst, and Analytics Support
+            roles in the UK.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="mailto:hrushikeshdunde3069@gmail.com"
+              className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:bg-blue-600"
+            >
+              Email Me
+            </a>
+
+            <a
+              href="https://www.linkedin.com/in/hrushikesh-dunde-sap/"
+              className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-blue-400"
+            >
+              LinkedIn
+            </a>
+          </div>
+
+          <div className="mt-8 space-y-2 text-sm text-slate-400">
+            <p>Brighton, United Kingdom</p>
+            <p>+44 7404304513</p>
+            <p>hrushikeshdunde3069@gmail.com</p>
+          </div>
+        </div>
+      </section>
+
+      <footer className="relative border-t border-white/10 py-8 text-center text-sm text-slate-500">
+        © 2026 Hrushikesh Dunde. Built with Next.js and Tailwind CSS.
+      </footer>
+    </main>
+  )
 }
