@@ -112,14 +112,20 @@ return (
 
 
 <div className="pointer-events-none fixed inset-0">
+
 <div className="absolute left-[-10%] top-[-10%] h-96 w-96 rounded-full bg-blue-600/30 blur-3xl"/>
+
 <div className="absolute right-[-10%] top-[20%] h-96 w-96 rounded-full bg-cyan-500/20 blur-3xl"/>
+
 </div>
+
 
 
 <nav className="sticky top-0 z-50 border-b border-white/10 bg-slate-950/70 backdrop-blur-xl">
 
+
 <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
+
 
 <a href="#" className="text-xl font-bold">
 Hrushikesh<span className="text-blue-400">.</span>
@@ -136,9 +142,12 @@ Hrushikesh<span className="text-blue-400">.</span>
 
 </div>
 
+
 </div>
 
+
 </nav>
+
 
 
 
@@ -169,7 +178,6 @@ Skilled in data cleaning, statistical analysis, machine learning, predictive mod
 Seeking Graduate Data Analyst, BI Analyst or Reporting Analyst opportunities in the UK.
 
 </p>
-
 
 
 <div className="mt-9 flex flex-wrap gap-4">
@@ -213,8 +221,11 @@ portfolio/profile.ts
 
 
 <p>const name = "Hrushikesh Dunde"</p>
+
 <p>const role = "Data Analyst"</p>
+
 <p>const education = "MSc Data Analytics"</p>
+
 <p>const location = "Brighton, UK"</p>
 
 
@@ -225,3 +236,401 @@ portfolio/profile.ts
 
 
 </section>
+<section id="profile" className="mx-auto max-w-7xl px-6 py-20">
+
+<h2 className="text-3xl font-bold text-blue-400">
+Profile
+</h2>
+
+
+<div className="mt-6 max-w-4xl text-slate-300 leading-8">
+
+<p>
+Data Analyst with an IT Engineering background and MSc Data Analytics
+student at the University of Brighton.
+</p>
+
+
+<p className="mt-4">
+Experienced in Python, R, SAS, SQL, Power BI and SAP ABAP.
+Skilled in data cleaning, statistical analysis, regression,
+machine learning, predictive modelling and dashboard reporting.
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section className="mx-auto max-w-7xl px-6 py-10">
+
+
+<div className="grid gap-6 md:grid-cols-4">
+
+
+{stats.map((item,index)=>(
+
+
+<div
+key={index}
+className="rounded-2xl border border-white/10 bg-white/5 p-6 text-center"
+>
+
+
+<h3 className="text-3xl font-bold text-blue-400">
+{item[0]}
+</h3>
+
+
+<p className="mt-2 text-slate-300">
+{item[1]}
+</p>
+
+
+</div>
+
+
+))}
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section id="projects" className="mx-auto max-w-7xl px-6 py-20">
+
+
+<h2 className="text-3xl font-bold text-blue-400">
+Academic Projects
+</h2>
+
+
+
+<div className="mt-10 grid gap-6 md:grid-cols-2">
+
+
+{academicProjects.map((project,index)=>(
+
+
+<div
+key={index}
+className="rounded-2xl border border-white/10 bg-white/5 p-6"
+>
+
+
+<h3 className="text-xl font-bold">
+{project.title}
+</h3>
+
+
+<p className="mt-2 text-sm text-blue-400">
+{project.module} | {project.year}
+</p>
+
+
+<p className="mt-4 text-slate-300 leading-7">
+{project.text}
+</p>
+
+
+</div>
+
+
+))}
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section className="mx-auto max-w-7xl px-6 py-20">
+
+
+<h2 className="text-3xl font-bold text-blue-400">
+Project Experience
+</h2>
+
+
+
+<div className="mt-10 grid gap-6 md:grid-cols-3">
+
+
+{projectExperience.map((project,index)=>(
+
+
+<div
+key={index}
+className="rounded-2xl border border-white/10 bg-white/5 p-6"
+>
+
+
+<h3 className="text-xl font-bold">
+{project.title}
+</h3>
+
+
+<p className="mt-2 text-blue-400 text-sm">
+{project.subtitle}
+</p>
+
+
+<p className="mt-4 text-slate-300">
+{project.text}
+</p>
+
+
+</div>
+
+
+))}
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="skills" className="mx-auto max-w-7xl px-6 py-20">
+
+
+<h2 className="text-3xl font-bold text-blue-400">
+Technical Skills
+</h2>
+
+
+
+<div className="mt-8 flex flex-wrap gap-3">
+
+
+{technicalSkills.map((skill,index)=>(
+
+
+<span
+key={index}
+className="rounded-xl border border-white/10 bg-white/5 px-4 py-2 text-sm"
+>
+
+
+{skill}
+
+
+</span>
+
+
+))}
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+<section id="education" className="mx-auto max-w-7xl px-6 py-20">
+
+
+<h2 className="text-3xl font-bold text-blue-400">
+Education
+</h2>
+
+
+
+<div className="mt-8 grid gap-6 md:grid-cols-2">
+
+
+<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+
+
+<h3 className="text-xl font-bold">
+MSc Data Analytics
+</h3>
+
+
+<p className="mt-2 text-blue-400">
+2026
+</p>
+
+
+<p className="mt-3 text-slate-300">
+University of Brighton, United Kingdom
+</p>
+
+
+</div>
+
+
+
+
+<div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+
+
+<h3 className="text-xl font-bold">
+Bachelor of Engineering
+</h3>
+
+
+<p className="mt-2 text-blue-400">
+Information Technology | 2023
+</p>
+
+
+<p className="mt-3 text-slate-300">
+Mumbai University, India
+</p>
+
+
+</div>
+
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section className="mx-auto max-w-7xl px-6 py-20">
+
+
+<h2 className="text-3xl font-bold text-blue-400">
+Certification
+</h2>
+
+
+
+<div className="mt-6 rounded-2xl border border-white/10 bg-white/5 p-6">
+
+
+<h3 className="text-xl font-bold">
+SAP Certified Development Specialist
+</h3>
+
+
+<p className="mt-2 text-slate-300">
+ABAP for SAP HANA 2.0
+</p>
+
+
+<p className="text-slate-400">
+Certificate No. 0025823234
+</p>
+
+
+</div>
+
+
+</section>
+<section id="contact" className="mx-auto max-w-7xl px-6 py-20">
+
+  <h2 className="text-3xl font-bold text-blue-400">
+    Contact
+  </h2>
+
+  <div className="mt-8 grid gap-6 md:grid-cols-2">
+
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+      <h3 className="text-xl font-bold">Get in touch</h3>
+
+      <p className="mt-3 text-slate-300 leading-7">
+        You can contact me for Data Analyst, BI Analyst or Reporting Analyst roles.
+        I am open to graduate opportunities in the UK.
+      </p>
+
+      <div className="mt-6 space-y-3 text-slate-300">
+
+        <p>
+          Email:{" "}
+          <a
+            href="mailto:hrushikeshdunde3069@gmail.com"
+            className="text-blue-400"
+          >
+            hrushikeshdunde3069@gmail.com
+          </a>
+        </p>
+
+        <p>
+          Location: Brighton, United Kingdom
+        </p>
+
+        <p>
+          LinkedIn:{" "}
+          <a
+            href="#"
+            className="text-blue-400"
+          >
+            linkedin.com/in/hrushikesh-dunde
+          </a>
+        </p>
+
+      </div>
+    </div>
+
+    <div className="rounded-2xl border border-white/10 bg-white/5 p-6">
+      <h3 className="text-xl font-bold">Availability</h3>
+
+      <p className="mt-3 text-slate-300 leading-7">
+        Available for full-time graduate roles starting immediately after MSc completion.
+        Open to relocation within the UK.
+      </p>
+
+      <div className="mt-6 rounded-xl border border-white/10 bg-black/30 p-4 font-mono text-sm text-slate-300">
+        <p>status: "seeking_opportunity"</p>
+        <p>type: "Graduate Data Analyst"</p>
+        <p>mode: "Full-time"</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<footer className="border-t border-white/10 bg-slate-950/60 py-10">
+
+  <div className="mx-auto max-w-7xl px-6 text-center text-sm text-slate-400">
+
+    <p>
+      © {new Date().getFullYear()} Hrushikesh Dunde. All rights reserved.
+    </p>
+
+    <p className="mt-2">
+      Built with Next.js and Tailwind CSS
+    </p>
+
+  </div>
+
+</footer>
+
+</main>
+)
+}
