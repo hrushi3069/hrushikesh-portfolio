@@ -233,6 +233,16 @@ export default function Home() {
               <h3 className="text-2xl font-bold group-hover:text-blue-300">{project.title}</h3>
               <p className="mt-2 text-sm text-cyan-300">{project.tools}</p>
               <p className="mt-4 leading-7 text-slate-400">{project.text}</p>
+              {project.github && (
+  <a
+    href={project.github}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-5 inline-block rounded-xl bg-blue-500 px-4 py-2 text-sm font-semibold text-white hover:bg-blue-600"
+  >
+    GitHub
+  </a>
+)}
             </article>
           ))}
         </div>
