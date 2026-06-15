@@ -128,9 +128,7 @@ export default function Home() {
 
       <section className="relative mx-auto grid min-h-[90vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-          <div className="mb-6 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm text-blue-300">
-            Data Analyst | MSc Data Analytics | UK
-          </div>
+      
 
           <h1 className="max-w-4xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
             Hrushikesh Dunde
