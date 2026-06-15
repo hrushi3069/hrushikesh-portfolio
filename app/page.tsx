@@ -94,7 +94,6 @@ export default function Home() {
 
   { name: "Java", icon: "https://cdn.simpleicons.org/openjdk" },
 
-  { name: "RStudio", icon: "https://images.seeklogo.com/logo-png/34/1/rstudio-logo-png_seeklogo-349849.png" },
   { name: "Android", icon: "https://cdn.simpleicons.org/android" },
   { name: "Power BI", icon: "https://logos-world.net/wp-content/uploads/2022/02/Power-BI-Logo.png" },
   { name: "SAP", icon: "https://cdn.simpleicons.org/sap" },
