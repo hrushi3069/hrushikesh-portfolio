@@ -314,7 +314,7 @@ export default function Home() {
       </section>
 
       <footer className="relative border-t border-white/10 py-8 text-center text-sm text-slate-500">
-        © 2026 Hrushikesh Dunde. Built with Next.js and Tailwind CSS.
+     © 2026 Hrushikesh Dunde. Designed and developed with Next.js, React and Tailwind CSS.
       </footer>
     </main>
   )
