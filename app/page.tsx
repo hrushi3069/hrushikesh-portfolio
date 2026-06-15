@@ -86,36 +86,37 @@ export default function Home() {
     },
   ]
 
-  const skillsWithIcons = [
-    { name: "Python", icon: "https://cdn.simpleicons.org/python" },
-    { name: "R", icon: "https://cdn.simpleicons.org/r" },
-    { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
-    { name: "SQL", icon: "https://cdn.simpleicons.org/postgresql" },
-    { name: "Git", icon: "https://cdn.simpleicons.org/git" },
-    { name: "Java", icon: "https://cdn.simpleicons.org/openjdk" },
-    { name: "Machine Learning", icon: "https://cdn.simpleicons.org/tensorflow" },
-    { name: "RStudio", icon: "https://cdn.simpleicons.org/rstudioide" },
-    { name: "AutoCAD", icon: "https://cdn.simpleicons.org/autodesk" },
-    { name: "Android Dev", icon: "https://cdn.simpleicons.org/android" },
-    { name: "Power BI", icon: "https://cdn.simpleicons.org/powerbi" },
-    { name: "SAP ABAP", icon: "https://cdn.simpleicons.org/sap" },
-    { name: "SAS", icon: null },
-    { name: "SAS Studio", icon: null },
-    { name: "Excel", icon: null },
-    { name: "XGBoost", icon: null },
-    { name: "SHAP", icon: null },
-    { name: "SMOTE", icon: null },
-    { name: "PCA", icon: null },
-    { name: "MANOVA", icon: null },
-    { name: "ROC / AUC", icon: null },
-    { name: "Kaplan-Meier", icon: null },
-    { name: "Cox Regression", icon: null },
-    { name: "GIS", icon: null },
-    { name: "CRISP-DM", icon: null },
-    { name: "Google Earth Pro", icon: null },
-    { name: "Factor Analysis", icon: null },
-    { name: "Bayesian Analysis", icon: null },
-  ]
+ const skillsWithIcons = [
+  { name: "Python", icon: "https://cdn.simpleicons.org/python" },
+  { name: "R", icon: "https://cdn.simpleicons.org/r" },
+  { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
+  { name: "SQL", icon: "https://cdn.simpleicons.org/postgresql" },
+  { name: "Git", icon: "https://cdn.simpleicons.org/git" },
+  { name: "Java", icon: "https://cdn.simpleicons.org/openjdk" },
+  { name: "TensorFlow", icon: "https://cdn.simpleicons.org/tensorflow" },
+  { name: "RStudio", icon: "https://cdn.simpleicons.org/rstudio" },
+  { name: "Android", icon: "https://cdn.simpleicons.org/android" },
+  { name: "Power BI", icon: "https://cdn.simpleicons.org/powerbi" },
+  { name: "SAP", icon: "https://cdn.simpleicons.org/sap" },
+  { name: "AutoCAD", icon: "https://cdn.simpleicons.org/autodesk" },
+
+  { name: "SAS", icon: null },
+  { name: "SAS Studio", icon: null },
+  { name: "Excel", icon: null },
+  { name: "XGBoost", icon: null },
+  { name: "SHAP", icon: null },
+  { name: "SMOTE", icon: null },
+  { name: "PCA", icon: null },
+  { name: "MANOVA", icon: null },
+  { name: "ROC / AUC", icon: null },
+  { name: "Kaplan-Meier", icon: null },
+  { name: "Cox Regression", icon: null },
+  { name: "GIS", icon: null },
+  { name: "CRISP-DM", icon: null },
+  { name: "Google Earth Pro", icon: null },
+  { name: "Factor Analysis", icon: null },
+  { name: "Bayesian Analysis", icon: null },
+]
 
   const stats = [
     ["14+", "Projects"],
@@ -250,11 +251,10 @@ export default function Home() {
             <div key={skill.name} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/10 px-5 py-3 backdrop-blur transition hover:-translate-y-1 hover:border-blue-400">
               {skill.icon ? (
                 <img
-                  src={skill.icon}
-                  alt={skill.name}
-                  className="h-6 w-6"
-                  onError={(e) => { e.currentTarget.style.display = "none" }}
-                />
+  src={skill.icon}
+  alt={skill.name}
+  className="h-6 w-6 object-contain"
+/>
               ) : (
                 <span className="flex h-6 w-6 items-center justify-center rounded bg-blue-400/20 text-[10px] font-bold text-blue-300">
                   {skill.name.slice(0, 2).toUpperCase()}
