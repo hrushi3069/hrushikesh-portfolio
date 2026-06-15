@@ -120,7 +120,7 @@ export default function Home() {
             </a>
 
             <a
-              href="/resume.pdf"
+              href="/RESUME.pdf"
               className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15"
             >
               Download CV
