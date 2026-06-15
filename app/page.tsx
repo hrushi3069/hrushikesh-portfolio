@@ -11,6 +11,8 @@ export default function Home() {
       category: "Machine Learning",
       tools: "Python, Scikit-learn, Pandas",
       text: "Built and compared regression models to predict house prices. Trained Linear Regression, Decision Tree, Random Forest, Neural Network, and Stacking Ensemble models. Evaluated using MAE, RMSE, R², and 5-fold cross-validation.",
+      github: "https://github.com/hrushi3069/Housing-Market-Analysis-and-Price-Prediction-Using-SAS"
+}
     },
     {
       title: "King County Housing Dataset Analysis",
@@ -157,7 +159,7 @@ export default function Home() {
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-            I am Hrushikesh Dunde, an MSc Data Analytics student at the
+            Hey, I am Hrushikesh, an MSc Data Analytics student at the
             University of Brighton. I work with Python, R, SAS, SQL, Power BI,
             machine learning, statistical modelling, and dashboard reporting.
           </p>
