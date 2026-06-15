@@ -1,6 +1,6 @@
 export default function Home() {
   const projects = [
-  {
+    {
       title: "Explainable ML for Hazardous Asteroids",
       category: "Machine Learning",
       tools: "Python, XGBoost, SHAP, SMOTE, Random Forest",
@@ -86,18 +86,40 @@ export default function Home() {
     },
   ]
 
-
-  const skills = [
-    "Python", "R", "SAS", "SQL", "MySQL", "Power BI", "Excel",
-    "Machine Learning", "Regression", "Classification", "PCA",
-    "Factor Analysis", "MANOVA", "ROC", "AUC", "SAP ABAP",
-    "RStudio", "SAS Studio", "AutoCAD", "Google Earth Pro",
-    "XGBoost", "SHAP", "SMOTE", "Kaplan-Meier", "Cox Regression",
-    "GIS", "Android Development", "Java", "Android Studio",
+  const skillsWithIcons = [
+    { name: "Python", icon: "https://cdn.simpleicons.org/python" },
+    { name: "R", icon: "https://cdn.simpleicons.org/r" },
+    { name: "MySQL", icon: "https://cdn.simpleicons.org/mysql" },
+    { name: "SQL", icon: "https://cdn.simpleicons.org/postgresql" },
+    { name: "Git", icon: "https://cdn.simpleicons.org/git" },
+    { name: "Java", icon: "https://cdn.simpleicons.org/openjdk" },
+    { name: "Machine Learning", icon: "https://cdn.simpleicons.org/tensorflow" },
+    { name: "RStudio", icon: "https://cdn.simpleicons.org/rstudioide" },
+    { name: "AutoCAD", icon: "https://cdn.simpleicons.org/autodesk" },
+    { name: "Android Dev", icon: "https://cdn.simpleicons.org/android" },
+    { name: "Power BI", icon: "https://cdn.simpleicons.org/powerbi" },
+    { name: "SAP ABAP", icon: "https://cdn.simpleicons.org/sap" },
+    { name: "SAS", icon: null },
+    { name: "SAS Studio", icon: null },
+    { name: "Excel", icon: null },
+    { name: "XGBoost", icon: null },
+    { name: "SHAP", icon: null },
+    { name: "SMOTE", icon: null },
+    { name: "PCA", icon: null },
+    { name: "MANOVA", icon: null },
+    { name: "ROC / AUC", icon: null },
+    { name: "Kaplan-Meier", icon: null },
+    { name: "Cox Regression", icon: null },
+    { name: "GIS", icon: null },
+    { name: "CRISP-DM", icon: null },
+    { name: "Google Earth Pro", icon: null },
+    { name: "Factor Analysis", icon: null },
+    { name: "Bayesian Analysis", icon: null },
   ]
+
   const stats = [
-    ["10+", "Projects"],
-    ["20+", "Technical Skills"],
+    ["14+", "Projects"],
+    ["28+", "Technical Skills"],
     ["2026", "MSc Completion"],
     ["60 WPM", "Typing Speed"],
   ]
@@ -115,7 +137,6 @@ export default function Home() {
           <a href="#" className="text-xl font-bold tracking-tight">
             Hrushikesh<span className="text-blue-400">.</span>
           </a>
-
           <div className="hidden gap-8 text-sm text-slate-300 md:flex">
             <a href="#about" className="hover:text-blue-400">About</a>
             <a href="#projects" className="hover:text-blue-400">Projects</a>
@@ -128,40 +149,28 @@ export default function Home() {
 
       <section className="relative mx-auto grid min-h-[90vh] max-w-7xl items-center gap-12 px-6 py-20 lg:grid-cols-[1.1fr_0.9fr]">
         <div>
-      
-
+          <div className="mb-6 inline-flex rounded-full border border-blue-400/30 bg-blue-400/10 px-4 py-2 text-sm text-blue-300">
+            Data Analyst | MSc Data Analytics | UK
+          </div>
           <h1 className="max-w-4xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
             Hrushikesh Dunde
             <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
               {" "}Data Analyst
             </span>
           </h1>
-
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
             I am Hrushikesh Dunde, an MSc Data Analytics student at the
             University of Brighton. I work with Python, R, SAS, SQL, Power BI,
             machine learning, statistical modelling, and dashboard reporting.
           </p>
-
           <div className="mt-9 flex flex-wrap gap-4">
-            <a
-              href="#projects"
-              className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-1 hover:bg-blue-600"
-            >
+            <a href="#projects" className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-1 hover:bg-blue-600">
               View My Projects
             </a>
-
-            <a
-              href="/RESUME.pdf"
-              className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15"
-            >
+            <a href="/RESUME.pdf" className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15">
               Download CV
             </a>
-
-            <a
-              href="mailto:hrushikeshdunde3069@gmail.com"
-              className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-blue-400"
-            >
+            <a href="mailto:hrushikeshdunde3069@gmail.com" className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-blue-400">
               Contact Me
             </a>
           </div>
@@ -175,36 +184,12 @@ export default function Home() {
                 <div className="h-3 w-3 rounded-full bg-yellow-400" />
                 <div className="h-3 w-3 rounded-full bg-green-400" />
               </div>
-
               <p className="text-sm text-slate-400">portfolio/profile.ts</p>
-
               <div className="mt-5 space-y-3 font-mono text-sm leading-7">
-                <p>
-                  <span className="text-purple-400">const</span>{" "}
-                  <span className="text-blue-300">name</span>{" "}
-                  <span className="text-slate-500">=</span>{" "}
-                  <span className="text-green-300">"Hrushikesh Dunde"</span>
-                </p>
-                <p>
-                  <span className="text-purple-400">const</span>{" "}
-                  <span className="text-blue-300">role</span>{" "}
-                  <span className="text-slate-500">=</span>{" "}
-                  <span className="text-green-300">"Data Analyst"</span>
-                </p>
-                <p>
-                  <span className="text-purple-400">const</span>{" "}
-                  <span className="text-blue-300">focus</span>{" "}
-                  <span className="text-slate-500">=</span>{" "}
-                  <span className="text-green-300">
-                    "Data, BI, ML, Statistics"
-                  </span>
-                </p>
-                <p>
-                  <span className="text-purple-400">const</span>{" "}
-                  <span className="text-blue-300">location</span>{" "}
-                  <span className="text-slate-500">=</span>{" "}
-                  <span className="text-green-300">"Brighton, UK"</span>
-                </p>
+                <p><span className="text-purple-400">const</span>{" "}<span className="text-blue-300">name</span>{" "}<span className="text-slate-500">=</span>{" "}<span className="text-green-300">"Hrushikesh Dunde"</span></p>
+                <p><span className="text-purple-400">const</span>{" "}<span className="text-blue-300">role</span>{" "}<span className="text-slate-500">=</span>{" "}<span className="text-green-300">"Data Analyst"</span></p>
+                <p><span className="text-purple-400">const</span>{" "}<span className="text-blue-300">focus</span>{" "}<span className="text-slate-500">=</span>{" "}<span className="text-green-300">"Data, BI, ML, Statistics"</span></p>
+                <p><span className="text-purple-400">const</span>{" "}<span className="text-blue-300">location</span>{" "}<span className="text-slate-500">=</span>{" "}<span className="text-green-300">"Brighton, UK"</span></p>
               </div>
             </div>
           </div>
@@ -214,10 +199,7 @@ export default function Home() {
       <section className="relative mx-auto max-w-7xl px-6 py-10">
         <div className="grid gap-4 md:grid-cols-4">
           {stats.map(([number, label]) => (
-            <div
-              key={label}
-              className="rounded-2xl border border-white/10 bg-white/10 p-6 text-center backdrop-blur"
-            >
+            <div key={label} className="rounded-2xl border border-white/10 bg-white/10 p-6 text-center backdrop-blur">
               <h2 className="text-3xl font-black text-blue-300">{number}</h2>
               <p className="mt-2 text-sm text-slate-400">{label}</p>
             </div>
@@ -228,58 +210,30 @@ export default function Home() {
       <section id="about" className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr]">
           <div>
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-              About Me
-            </p>
-            <h2 className="mt-4 text-4xl font-black">
-              Data analyst with IT engineering background
-            </h2>
+            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">About Me</p>
+            <h2 className="mt-4 text-4xl font-black">Data analyst with IT engineering background</h2>
           </div>
-
           <div className="space-y-5 text-lg leading-8 text-slate-300">
-            <p>
-              I have practical experience in data cleaning, exploratory data
-              analysis, statistical modelling, machine learning, dashboard
-              thinking, SQL database design, and technical documentation.
-            </p>
-
-            <p>
-              My career target is to work as a Data Analyst, Junior Data
-              Analyst, BI Analyst, Reporting Analyst, Graduate Data Analyst, or
-              Analytics Support professional in the UK.
-            </p>
+            <p>I have practical experience in data cleaning, exploratory data analysis, statistical modelling, machine learning, dashboard thinking, SQL database design, and technical documentation.</p>
+            <p>My career target is to work as a Data Analyst, Junior Data Analyst, BI Analyst, Reporting Analyst, Graduate Data Analyst, or Analytics Support professional in the UK.</p>
           </div>
         </div>
       </section>
 
       <section id="projects" className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-12 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-            Projects
-          </p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">Projects</p>
           <h2 className="mt-4 text-4xl font-black">Selected work</h2>
-          <p className="mt-4 text-slate-400">
-            A mix of machine learning, statistics, database design, business
-            analytics, and BI-focused work.
-          </p>
+          <p className="mt-4 text-slate-400">A mix of machine learning, statistics, database design, business analytics, medical statistics, GIS, and full-stack development work.</p>
         </div>
-
         <div className="grid gap-6 md:grid-cols-2">
           {projects.map((project) => (
-            <article
-              key={project.title}
-              className="group rounded-3xl border border-white/10 bg-white/[0.07] p-7 backdrop-blur transition hover:-translate-y-2 hover:border-blue-400/50 hover:bg-white/[0.1]"
-            >
+            <article key={project.title} className="group rounded-3xl border border-white/10 bg-white/[0.07] p-7 backdrop-blur transition hover:-translate-y-2 hover:border-blue-400/50 hover:bg-white/[0.1]">
               <div className="mb-5 inline-flex rounded-full bg-blue-400/10 px-3 py-1 text-xs font-semibold text-blue-300">
                 {project.category}
               </div>
-
-              <h3 className="text-2xl font-bold group-hover:text-blue-300">
-                {project.title}
-              </h3>
-
+              <h3 className="text-2xl font-bold group-hover:text-blue-300">{project.title}</h3>
               <p className="mt-2 text-sm text-cyan-300">{project.tools}</p>
-
               <p className="mt-4 leading-7 text-slate-400">{project.text}</p>
             </article>
           ))}
@@ -288,46 +242,44 @@ export default function Home() {
 
       <section id="skills" className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-12 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-            Skills
-          </p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">Skills</p>
           <h2 className="mt-4 text-4xl font-black">Technical toolkit</h2>
         </div>
-
-        <div className="flex flex-wrap gap-3">
-          {skills.map((skill) => (
-            <span
-              key={skill}
-              className="rounded-full border border-white/10 bg-white/10 px-5 py-3 text-sm font-medium text-slate-200 transition hover:-translate-y-1 hover:border-blue-400 hover:text-blue-300"
-            >
-              {skill}
-            </span>
+        <div className="flex flex-wrap gap-4">
+          {skillsWithIcons.map((skill) => (
+            <div key={skill.name} className="flex items-center gap-3 rounded-2xl border border-white/10 bg-white/10 px-5 py-3 backdrop-blur transition hover:-translate-y-1 hover:border-blue-400">
+              {skill.icon ? (
+                <img
+                  src={skill.icon}
+                  alt={skill.name}
+                  className="h-6 w-6"
+                  onError={(e) => { e.currentTarget.style.display = "none" }}
+                />
+              ) : (
+                <span className="flex h-6 w-6 items-center justify-center rounded bg-blue-400/20 text-[10px] font-bold text-blue-300">
+                  {skill.name.slice(0, 2).toUpperCase()}
+                </span>
+              )}
+              <span className="text-sm font-medium text-slate-200">{skill.name}</span>
+            </div>
           ))}
         </div>
       </section>
 
       <section id="education" className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="mb-12 max-w-3xl">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-            Education
-          </p>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">Education</p>
           <h2 className="mt-4 text-4xl font-black">Academic background</h2>
         </div>
-
         <div className="grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-white/10 bg-white/[0.07] p-7">
             <p className="text-sm text-blue-300">Expected 2026</p>
             <h3 className="mt-3 text-2xl font-bold">MSc Data Analytics</h3>
-            <p className="mt-2 text-slate-400">
-              University of Brighton, United Kingdom
-            </p>
+            <p className="mt-2 text-slate-400">University of Brighton, United Kingdom</p>
           </div>
-
           <div className="rounded-3xl border border-white/10 bg-white/[0.07] p-7">
             <p className="text-sm text-blue-300">2023</p>
-            <h3 className="mt-3 text-2xl font-bold">
-              Bachelor of Engineering in IT
-            </h3>
+            <h3 className="mt-3 text-2xl font-bold">Bachelor of Engineering in IT</h3>
             <p className="mt-2 text-slate-400">Mumbai University, India</p>
           </div>
         </div>
@@ -335,12 +287,8 @@ export default function Home() {
 
       <section className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="rounded-[2rem] border border-white/10 bg-gradient-to-br from-blue-500/20 to-purple-500/20 p-8 backdrop-blur">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">
-            Certification
-          </p>
-          <h2 className="mt-4 text-3xl font-black">
-            SAP Certified Development Specialist
-          </h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-300">Certification</p>
+          <h2 className="mt-4 text-3xl font-black">SAP Certified Development Specialist</h2>
           <p className="mt-3 text-slate-300">ABAP for SAP HANA 2.0</p>
           <p className="mt-1 text-slate-400">Certificate No. 0025823234</p>
         </div>
@@ -348,36 +296,19 @@ export default function Home() {
 
       <section id="contact" className="relative mx-auto max-w-7xl px-6 py-24">
         <div className="rounded-[2rem] border border-white/10 bg-white/[0.07] p-8 text-center backdrop-blur md:p-12">
-          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">
-            Contact
-          </p>
-
-          <h2 className="mt-4 text-4xl font-black">
-            Let us connect
-          </h2>
-
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-blue-400">Contact</p>
+          <h2 className="mt-4 text-4xl font-black">Let us connect</h2>
           <p className="mx-auto mt-4 max-w-2xl text-slate-400">
-            I am open to Data Analyst, Junior Data Analyst, BI Analyst,
-            Reporting Analyst, Graduate Data Analyst, and Analytics Support
-            roles in the UK.
+            I am open to Data Analyst, Junior Data Analyst, BI Analyst, Reporting Analyst, Graduate Data Analyst, and Analytics Support roles in the UK.
           </p>
-
           <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <a
-              href="mailto:hrushikeshdunde3069@gmail.com"
-              className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:bg-blue-600"
-            >
+            <a href="mailto:hrushikeshdunde3069@gmail.com" className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:bg-blue-600">
               Email Me
             </a>
-
-            <a
-              href="https://www.linkedin.com/in/hrushikesh-dunde-sap/"
-              className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-blue-400"
-            >
+            <a href="https://www.linkedin.com/in/hrushikesh-dunde-sap/" className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-blue-400">
               LinkedIn
             </a>
           </div>
-
           <div className="mt-8 space-y-2 text-sm text-slate-400">
             <p>Brighton, United Kingdom</p>
             <p>+44 7404304513</p>
