@@ -12,7 +12,7 @@ export default function Home() {
       tools: "Python, Scikit-learn, Pandas",
       text: "Built and compared regression models to predict house prices. Trained Linear Regression, Decision Tree, Random Forest, Neural Network, and Stacking Ensemble models. Evaluated using MAE, RMSE, R², and 5-fold cross-validation.",
       github: "https://github.com/hrushi3069/Housing-Market-Analysis-and-Price-Prediction-Using-SAS"
-}
+
     },
     {
       title: "King County Housing Dataset Analysis",
