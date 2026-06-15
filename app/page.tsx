@@ -5,6 +5,7 @@ export default function Home() {
       category: "Machine Learning",
       tools: "Python, XGBoost, SHAP, SMOTE, Random Forest",
       text: "Classified potentially hazardous asteroids using NASA JPL orbital data. Applied SMOTE and class weighting for imbalance, compared Random Forest, XGBoost, and Logistic Regression, and used SHAP explainable AI to identify key risk factors.",
+      status: "Ongoing (Dissertation Project)"
     },
     {
       title: "King County House Price Prediction",
@@ -62,6 +63,7 @@ export default function Home() {
       category: "Database Design",
       tools: "SQL, MySQL, ERD, Star Schema",
       text: "Designed a relational database for guests, bookings, suppliers, activities, and payments. Covered BI reporting questions, star schema design, GDPR compliance, and database security.",
+      github: "https://github.com/hrushi3069/Pier-Party-Planning-Data-Management"
     },
     {
       title: "Land Acquisition Cost Prediction",
