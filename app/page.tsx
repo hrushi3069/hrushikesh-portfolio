@@ -99,9 +99,9 @@ export default function Home() {
           </div>
 
           <h1 className="max-w-4xl text-5xl font-black leading-tight tracking-tight md:text-7xl">
-            Turning data into
+            Hrushikesh Dunde
             <span className="bg-gradient-to-r from-blue-400 via-cyan-300 to-purple-400 bg-clip-text text-transparent">
-              {" "}clear decisions
+              {" "}Data Analyst
             </span>
           </h1>
 
