@@ -53,6 +53,7 @@ export default function Home() {
       category: "Business Analytics",
       tools: "CRISP-DM, Segmentation, Analytics",
       text: "Proposed predictive analytics for premium product up-selling using CRISP-DM methodology, customer segmentation strategies, and revenue-growth analysis.",
+      github: "https://github.com/hrushi3069/BOB-Customer-Upselling-Case-Study"    
     },
     {
       title: "Database Design for Worldwide Awaydays",
