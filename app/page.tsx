@@ -88,28 +88,13 @@ export default function Home() {
 
 
   const skills = [
-    "Python",
-    "R",
-    "SAS",
-    "SQL",
-    "MySQL",
-    "Power BI",
-    "Excel",
-    "Machine Learning",
-    "Regression",
-    "Classification",
-    "PCA",
-    "Factor Analysis",
-    "MANOVA",
-    "ROC",
-    "AUC",
-    "SAP ABAP",
-    "RStudio",
-    "SAS Studio",
-    "AutoCAD",
-    "Google Earth Pro",
+    "Python", "R", "SAS", "SQL", "MySQL", "Power BI", "Excel",
+    "Machine Learning", "Regression", "Classification", "PCA",
+    "Factor Analysis", "MANOVA", "ROC", "AUC", "SAP ABAP",
+    "RStudio", "SAS Studio", "AutoCAD", "Google Earth Pro",
+    "XGBoost", "SHAP", "SMOTE", "Kaplan-Meier", "Cox Regression",
+    "GIS", "Android Development", "Java", "Android Studio",
   ]
-
   const stats = [
     ["10+", "Projects"],
     ["20+", "Technical Skills"],
