@@ -88,6 +88,7 @@ export default function Home() {
       category: "Embedded Systems",
       tools: "Sensors, Hardware, Automation",
       text: "Built a fire safety system using sensor-based fire detection with automatic sprinkler response, integrating hardware components for real-time monitoring and rapid reaction.",
+      github: "https://github.com/hrushi3069/Fire-Alarm-System-with-Siren-and-Water-Sprinkler"
     },
   ]
 
