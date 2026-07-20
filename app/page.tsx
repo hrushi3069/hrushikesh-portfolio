@@ -7,6 +7,13 @@ export default function Home() {
       text: "Classified potentially hazardous asteroids using NASA JPL orbital data. Applied SMOTE and class weighting for imbalance, compared Random Forest, XGBoost, and Logistic Regression, and used SHAP explainable AI to identify key risk factors.",
       status: "Ongoing (Dissertation Project)"
     },
+{
+  title: "Airline Customer Loyalty Analytics",
+  category: "Business Analytics",
+  tools: "Python, Pandas, NumPy, Plotly, Customer Analytics, CLV",
+  text: "Analysed airline loyalty programme data to understand customer behaviour, retention patterns, loyalty tier performance, and Customer Lifetime Value (CLV). Integrated flight transaction and customer profile datasets, performed customer-level aggregation, created churn indicators, and generated business recommendations for customer retention, loyalty optimisation, and personalised marketing strategies.",
+  github: "https://github.com/hrushi3069/Airline-Customer-Loyalty-Analytics"
+},
     {
       title: "King County House Price Prediction",
       category: "Machine Learning",
