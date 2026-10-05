@@ -254,12 +254,6 @@ export default function Home() {
               <p className="mt-2 text-sm text-cyan-300">{project.tools}</p>
           
 
-{project.status && (
-  <p className="mt-2 text-sm font-semibold text-yellow-300">
-    {project.status}
-  </p>
-)}
-
 <p className="mt-4 leading-7 text-slate-400">
   {project.text}
 </p>
