@@ -1,20 +1,19 @@
 export default function Home() {
   const projects = [
- {
-      title: "Explainable ML for Hazardous Asteroids",
-      category: "Machine Learning",
-      tools: "Python, XGBoost, SHAP, SMOTE, Random Forest",
-      text: "Classified potentially hazardous asteroids using NASA JPL orbital data. Applied SMOTE and class weighting for imbalance, compared Random Forest, XGBoost, and Logistic Regression, and used SHAP explainable AI to identify key risk factors.",
-      status: "Ongoing (Dissertation Project)"
-    },
-
+{
+  title: "Hotel Booking Analytics Dashboard",
+  category: "Data Analytics",
+  tools: "Python, SQL Server, Tableau, Pandas, Excel",
+  text: "Analyzed 21,996 hotel booking records to uncover trends in cancellations, revenue, customer segments, and booking behavior. Performed data cleaning with Python, executed SQL-based KPI analysis, and built an interactive Tableau dashboard featuring revenue trends, cancellation rates, top countries, and customer insights.",
+  github: "https://github.com/hrushi3069/Hotel-Booking-Analysis"
+},
 
     {
       title: "Explainable ML for Hazardous Asteroids",
       category: "Machine Learning",
       tools: "Python, XGBoost, SHAP, SMOTE, Random Forest",
       text: "Classified potentially hazardous asteroids using NASA JPL orbital data. Applied SMOTE and class weighting for imbalance, compared Random Forest, XGBoost, and Logistic Regression, and used SHAP explainable AI to identify key risk factors.",
-      status: "Ongoing (Dissertation Project)"
+      github: "https://github.com/hrushi3069/NASA-PHA-Explainable-ML"
     },
 {
   title: "Airline Customer Loyalty Analytics",
