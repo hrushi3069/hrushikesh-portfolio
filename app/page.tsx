@@ -185,7 +185,7 @@ export default function Home() {
             <a href="#projects" className="rounded-xl bg-blue-500 px-6 py-3 font-semibold text-white shadow-lg shadow-blue-500/25 transition hover:-translate-y-1 hover:bg-blue-600">
               View My Projects
             </a>
-            <a href="/RESUME.pdf" className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15">
+            <a href="/Final resume.pdf" className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15">
               Download CV
             </a>
             <a href="mailto:hrushikeshdunde3069@gmail.com" className="rounded-xl border border-white/15 px-6 py-3 font-semibold text-white transition hover:-translate-y-1 hover:border-blue-400">
