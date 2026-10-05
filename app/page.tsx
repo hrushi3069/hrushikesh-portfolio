@@ -1,5 +1,14 @@
 export default function Home() {
   const projects = [
+ {
+      title: "Explainable ML for Hazardous Asteroids",
+      category: "Machine Learning",
+      tools: "Python, XGBoost, SHAP, SMOTE, Random Forest",
+      text: "Classified potentially hazardous asteroids using NASA JPL orbital data. Applied SMOTE and class weighting for imbalance, compared Random Forest, XGBoost, and Logistic Regression, and used SHAP explainable AI to identify key risk factors.",
+      status: "Ongoing (Dissertation Project)"
+    },
+
+
     {
       title: "Explainable ML for Hazardous Asteroids",
       category: "Machine Learning",
