@@ -186,7 +186,7 @@ export default function Home() {
               View My Projects
             </a>
             <a
-  href="/Final_resume.pdf"
+  href="/Final_Resume.pdf"
   download="Hrushikesh_Dunde_CV.pdf"
   className="rounded-xl border border-white/15 bg-white/10 px-6 py-3 font-semibold text-white backdrop-blur transition hover:-translate-y-1 hover:bg-white/15"
 >
